@@ -28,14 +28,14 @@ function startTimer(duration, display) {
       display.textContent = minutes + ":" + seconds;
 
       if (--timer < 0) {
-          window.location = "file:///Users/ianishmael/Desktop/homework/w-4/m-4-c/score.html";
+          window.location = "https://ianishmael.github.io/m-4-c/score.html";
           clearInterval(end);
       }
   }, 1000);
 }
 
 window.onload = function () {
-  var oneMinute = 60,
+  var oneMinute = 3,
       display = document.querySelector('#time');
   startTimer(oneMinute, display);
 };
