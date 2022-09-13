@@ -14,43 +14,31 @@ var timerEl = document.getElementById("countdown");
 var mainEl = document.getElementById("main");
 var message = " ";
 var words = message.split(" ");
-var score = 0
 
-/* timer  */
-function countdown() {
-  var timeLeft = 65;
+// Timer
+function startTimer(duration, display) {
+  var timer = duration, minutes, seconds;
+  var end =setInterval(function () {
+      minutes = parseInt(timer / 60, 10)
+      seconds = parseInt(timer % 60, 10);
 
-  var timeInterval = setInterval(function () {
-    if (timeLeft > 1) {
-      timerEl.textContent = timeLeft + " seconds remaining";
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
 
-      timeLeft--;
-    } else if (timeLeft === 1) {
-      timerEl.textContent = timeLeft + " second remaining";
-      timeLeft--;
-    } else {
-      timerEl.textContent = "";
+      display.textContent = minutes + ":" + seconds;
 
-      clearInterval(timeInterval);
-
-      displayMessage();
-    }
-  }, 1000);
-}
-function displayMessage() {
-  var wordCount = 0;
-
-  var msgInterval = setInterval(function () {
-    if (words[wordCount] === undefined) {
-      clearInterval(msgInterval);
-    } else {
-      mainEl.textContent = words[wordCount];
-      wordCount++;
-    }
+      if (--timer < 0) {
+          window.location = "file:///Users/ianishmael/Desktop/homework/w-4/m-4-c/score.html";
+          clearInterval(end);
+      }
   }, 1000);
 }
 
-countdown();
+window.onload = function () {
+  var oneMinute = 60,
+      display = document.querySelector('#time');
+  startTimer(oneMinute, display);
+};
 
 
 
@@ -91,9 +79,7 @@ var questions = [
 
 
 function getNextQuestion() {
-  /*  if (questionsIndex === 5){
-        return
-    } */
+ 
      
   checkAnswer();
   questionsIndex++;

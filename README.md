@@ -22,15 +22,23 @@ What are the steps required to install my project?
 ## Features
 
 
-- When entering the browser you are first greeted by the main page. It will promt you with the question "Ready to Play?". The user can either press play and it will take the user to the quiz or press the highscore button and it will show the history of the users initials and their previous score. 
-- When the user opens 
--
--
--
+- When entering the browser you are first greeted by the main page. It will promt you with the question "Ready to Play?". The user can press play and it will take the user to the quiz.
+- When the user opens the quiz it will start a count down of 60 seconds. When you have chosen a possible answer it will show in console wheither it is correct or incorrect.  
+- There are 5 qeastions in total.
+- Once the timer runs out it will say good job and it will give the user the option to go back to the quiz or go to the main hub. 
+
+
 
 ## Pictures of the Features
 
-![Alt text](./Assets/Screen%20Shot%202022-09-12%20at%202.11.02%20PM%20(2).png)
+![Alt text](./Assets/Screen%20Shot%202022-09-12%20at%207.52.46%20PM%20(2).png)
+![Alt text](./Assets/Screen%20Shot%202022-09-12%20at%207.54.23%20PM%20(2).png)
+![Alt text](./Assets/Screen%20Shot%202022-09-12%20at%207.53.45%20PM%20(2).png)
+![Alt text](./Assets/Screen%20Shot%202022-09-12%20at%207.54.05%20PM%20(2).png)
+![Alt text](./Assets/Screen%20Shot%202022-09-12%20at%207.54.34%20PM%20(2).png)
+![Alt text](./Assets/Screen%20Shot%202022-09-12%20at%207.54.48%20PM%20(2).png)
+![Alt text](./Assets/Screen%20Shot%202022-09-12%20at%207.55.06%20PM%20(2).png)
+![Alt text](./Assets/Screen%20Shot%202022-09-12%20at%207.55.27%20PM%20(2).png)
 
 
 ## License

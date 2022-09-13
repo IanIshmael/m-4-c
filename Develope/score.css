@@ -24,3 +24,25 @@ body {
   width: 700px;
   overflow: hidden;
 }
+h1 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0 auto;
+}
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pink);
+  border: none;
+  color: white;
+  text-decoration: none;
+}
+
+.play-btn {
+  padding: 1%;
+}
+
+.score-btn {
+  padding: 1%;
+}
